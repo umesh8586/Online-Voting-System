@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login</title>
+<link rel = "stylesheet" type = "text/css" href = "style.css?v=<?=$version?>">
+</head>
+<body>
+<%@include file="navbar.jsp" %>
+
+<div class = "formBack">
+<form action = "adminWelcome" method="post">
+<h5>Admin Login</h5>
+<label for="userId" class = "adminLogLabel">User Id</label>
+<br>
+<input name = "userId" id = "userId" type = "text"class="adminLog">
+<br>
+<label for="apass"class="adminLogLabel">Password</label>
+<br>
+<input name = "apass" id = "apass" type = "password"class="adminLog">
+<br>
+
+<button type = "submit" class="adminLog" >Login</button>
+<button type = "reset" class="adminLog">Clear</button>
+
+
+
+</form>
+</div>
+</body>
+</html>

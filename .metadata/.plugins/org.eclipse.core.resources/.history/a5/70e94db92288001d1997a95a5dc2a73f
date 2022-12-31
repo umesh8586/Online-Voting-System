@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type = "text/css" href = "style.css?v=<?=$version?>">
+<title>Voting</title>
+</head>
+<body>
+<%@include file="navbar.jsp" %>
+<div class = "formBack">
+<form action="vote" method="post">
+<label for="voterNumber" Style="font-size:25px;">Enter Your Voter Id Number</label>
+<input name = "voterNumber" id = "voterNumber" type = "text">
+<br>
+<label for="parties" style="font-size:25px; ">Choose Your Party</label>
+
+
+<select name="parties" id="parties" style="margin-left:100px;">
+  <option value="AAP">Aam Aadmi Party</option>
+  <option value="BJP">Bhartiye Janta Party</option>
+  <option value="INC">Indian National Congress</option>
+  
+</select>
+<br>
+<button type = "submit" class="log">Submit</button>
+</form>
+</div>
+
+</body>
+</html>

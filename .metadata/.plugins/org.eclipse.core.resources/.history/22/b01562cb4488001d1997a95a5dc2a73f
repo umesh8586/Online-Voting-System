@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+
+body
+{
+		margin : 0;
+		padding : 0;
+		background-image : url("https://c0.wallpaperflare.com/preview/946/377/129/indian-flag-tricolor-india-flag.jpg");
+		background-repeat : no-repeat;
+		background-size: cover;
+		max-width:100%;
+		height:100vh;
+
+}
+
+nav
+{
+	background-color : orange;
+	font-size : 30px;
+	color : white;
+	display : flex;
+	justify-content : flex-end;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	
+}
+
+nav a
+{
+	color : white;
+	padding-left : 25px;
+	padding-right : 25px;
+}
+
+nav a:hover
+{
+	color : black;
+}
+
+
+.formBack
+{
+	
+	background-color : #F0E9D2;
+	opacity : 0.8;
+	color : #0002A1;
+	font-size : 35px;
+	width : 50%;
+	display : flex;
+	justify-content : center;
+	margin-left : 48%;
+	margin-top : 2%;
+	border-radius : 20px;
+	padding-bottom : 20px;
+}
+
+.formBack label
+{
+	margin-left : 60px;
+	
+	
+}
+.formBack input
+{
+	width : 200px;
+	height : 20px;
+	text-align : center;
+	background-color : #FEFCF3;
+	border-radius : 10px;
+	margin-left : 80px;
+}
+.formBack button
+{
+	width : 100px;
+	height :30px;
+	background-color : #DBA39A;
+	font-size : 20px;
+	color : #0014FF;
+	border-radius : 20px;
+	margin-inline: 8px;
+	margin-right: -40px;
+	margin-left: 60px;
+	cursor : pointer;
+}
+.formBack a
+{
+	font-size : 25px;
+	margin-left : 150px;
+	color : #0014FF;
+}
+.formBack a:hover
+{
+	background-color : black;
+}
+.formBack h5
+{
+	display : flex;
+	justify-content : center;
+	margin-bottom : 8px;
+}
+.adminLog 
+{
+	
+	margin-right: 50px;
+}
+.adminLogLabel
+{
+	font-size: 30px;
+	padding-left:60px;
+	margin-bottom: -10px;
+}
+.about{
+	font-family: Helvetica;
+	font-size:25px;
+	width:100vx;
+	height:80vh;
+	padding-left:30px;
+	opacity:0.8;
+	background-color:#FEFCF3;
+}
+.about p{
+	padding-top:40px;
+	font-weight: bold;
+}
+.about img{
+	width:25%;
+	height:20%;
+	margin-right:10px;
+}

@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<title>About Us</title>
+</head>
+<body>
+<%@include file="navbar.jsp" %>
+<body>
+
+<div class="about">
+
+<p>
+Online voting system" is an online voting technique. In this system people who have citizenship of india and whose age is above 18 years and any sex can give his/her online vote without going to any physical polling station.
+</p>
+
+<br>
+<h4>About Developer</h4>
+<br>
+
+<img src="images/gaurav.jpeg"  align="right"  alt="Developer image">
+
+<br>
+Name : Umesh Pandit
+<br>
+Contact number : 9650638564
+<br>
+Email : ux.umesh@gmail.com 
+</div>
+</body>
+</html>

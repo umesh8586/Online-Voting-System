@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.PreparedStatement"%>
+<!DOCTYPE html>
+<html>
+<head>
+<%
+   
+    String a[] = new String[100];
+ 
+    Class.forName("com.mysql.cj.jdbc.Driver");
+	java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/OnlineVotingDatabase","root","Kumar@1801");
+	
+	PreparedStatement preparedStatement = con.prepareStatement("select parties,count(parties) as c from votecount group by parties");
+	ResultSet rs=((java.sql.Statement) preparedStatement).executeQuery("select partie,count(partie) as c from vote group by partie");
+	
+    int i=0;
+    while(rs.next()){
+        a[i] = rs.getString("c");
+        i++;
+    }
+    %>
+<meta charset="ISO-8859-1">
+<title>Result</title>
+</head>
+<body>
+<%@include file="adminnav.jsp" %>
+<table>
+<tr>
+<th>Parties</th>
+<th>Names</th>
+<th>Votes</th>
+</tr>
+<tr>
+<td>Aap</td>
+<td>Aam Aadmi Party</td>
+<td>0</td>
+</tr>
+<tr>
+<td>BJP</td>
+<td>Bhartiye Janta Party</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INC</td>
+<td>Indian National Congress</td>
+<td>0</td>
+</tr>
+</table>
+</body>
+</html>

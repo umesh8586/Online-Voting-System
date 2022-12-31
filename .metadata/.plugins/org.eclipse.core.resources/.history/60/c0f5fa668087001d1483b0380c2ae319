@@ -1,0 +1,50 @@
+    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type = "text/css" href = "style.css?v=<?=$version?>">
+<title>New Register</title>
+</head>
+<body>
+<%@include file="adminnav.jsp" %>
+<div class = "formBack">
+<form action="registerVoter" method="post">
+<h5>Please Fill The Details</h5>
+<label for="fname" style="font-size:25px;">Name :</label>
+<input name = "fname" id = "fname" type = "text" style="margin-left:180px;">
+<br>
+<label for="phone" style="font-size:25px;">Phone Number :</label>
+<input name = "phone" id = "phone" type = "number" style="margin-left:88px;">
+<br>
+<label for="emailid" style="font-size:25px;">Email :</label>
+<input name = "emailid" id = "emailid" type = "email" style="margin-left:180px;">
+<br>
+<label for="gender" style="font-size:25px;">Gender :</label>
+<input type="radio" id="male" name="gender" value="M"  style="margin-left: 20px;">
+  <label for="male" style="font-size:25px; margin-left:-95px;">Male</label>
+  <input type="radio" id="female" name="gender" value="F" style="margin-left:-90px;">
+  
+  <label for="female"style="font-size:25px; margin-left:-95px;">Female</label>
+  <input type="radio" id="transgender" name="gender" value="T"  style="margin-left:-90px;">
+  <label for="transgender"style="font-size:25px; margin-left:-95px;">Transgender</label>
+  
+  <br>
+  <label for="dateof"style="font-size:25px;">Date Of Birth :</label>
+<input name = "dateof" id = "dateof" type = "date" >
+<br>
+  <label for="add" style="font-size:25px;">Address :</label>
+<input name = "add" id = "add" type = "text" >
+<br>
+<label for="voternum" style="font-size:25px;">Voter id Number :</label>
+<input name = "voternum" id = "voternum" type = "text" >
+<br>
+<button type = "submit" Style="margin-left:190px;">Submit</button>
+<button type = "Reset" >Clear</button>
+
+<br>
+</form>
+</div>
+</body>
+</html>
